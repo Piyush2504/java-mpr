@@ -1,0 +1,36 @@
+package hotelManagementSystem;
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.event.*;
+import java.sql.*;
+import javax.swing.*;
+public class AddCustomer extends JFrame implements ActionListener {
+	
+	
+	AddCustomer(){
+		ImageIcon i= new ImageIcon(ClassLoader.getSystemResource("hotelManagementSystem/Icons/img8.jpg"));
+		JLabel l=new JLabel(i);
+		l.setBounds(0,0,600,900);
+		add(l);
+		
+		JLabel l1=new JLabel("ID");
+		l1.setBounds(200, 20, 150, 50);
+		l1.setForeground(Color.WHITE);
+		l1.setFont(new Font("serif", Font.BOLD, 30));
+		l.add(l1);
+
+		setTitle("ROOMS INFO");
+		setLayout(null);
+		setBounds(250, 0, 600, 650);
+		setVisible(true);
+	}
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		// TODO Auto-generated method stub
+		
+	}
+	public static void main(String[] args) {
+		new AddCustomer();
+	}
+	
+}
